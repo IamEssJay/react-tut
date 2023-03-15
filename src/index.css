@@ -97,3 +97,13 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/*Not Found*/
+.not-found h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.not-found div{
+  margin: 20px 0;
+}
