@@ -39,15 +39,14 @@ const Create = () => {
                 onChange={(e)=> setTitle(e.target.value)}
                 />
                 <label>Blog Author</label>
-                <select
+                <input 
+                placeholder="Author" 
+                type="text" 
+                required 
                 value={author}
                 onChange={(e)=> setAuthor(e.target.value)}
-                >
-                    <option value=""></option>
-                    <option value="Mario">Mario</option>
-                    <option value="Luigi">Luigi</option>
-                    <option value="Yoshi">Yoshi</option>
-                </select>
+                />
+                
                 <label>Blog Body </label>
                 <textarea 
                 placeholder="Content"
@@ -57,9 +56,6 @@ const Create = () => {
                 ></textarea>
                 {!IsLoading && <button>Add Blog</button>}
                 {IsLoading && <button disabled>Adding..</button>}
-                <p>{title}</p>
-                <p>{author}</p>
-                <p>{body}</p>
             </form>
         </div>
      );
