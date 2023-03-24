@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route , Switch } from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './blogDetails';
 import NotFound from './NotFound';
+import Firetut from './New';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path='/create'>
             <Create/>
+          </Route>
+          <Route path='/firetut'>
+            <Firetut/>
           </Route>
           <Route path='/blog/:id'>
             <BlogDetails/>

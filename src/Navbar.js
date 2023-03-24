@@ -5,7 +5,8 @@ const Navbar = () => {
             <h1>EssJay's React Blog</h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/create">New Blog</Link>
+                <Link to="/create">Blog 1</Link>
+                <Link to="/firetut">Blog 2</Link>
             </div> 
         </nav>
      );
